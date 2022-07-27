@@ -48,10 +48,23 @@ body {
     overflow: hidden; /*Para que los elementos dentro de el elemento padre no se desborden*/
 }
 
+/*Animación del elemento Hero*/
 @keyframes heroAnimation {
     0% {
         opacity: 0;
+        animation-timing-function: ease-in;
     }
+
+    12% { opacity: 1; }
+
+    25% { transform: scale(1.2); }
+
+    75% { 
+        opacity: 0; 
+        transform: scale(1.1);
+    }
+
+    100% { opacity: 0; }
 }
 
 .hero div {
@@ -64,6 +77,7 @@ body {
     background-position: center;
     background-repeat: none;
     opacity: 0; /*Las imagenes ocuparan el espacio, pero no se veran*/
+    animation: heroAnimation 18s infinite;
 }
 
 .hero div:nth-child(1) {
@@ -72,8 +86,10 @@ body {
 
 .hero div:nth-child(2) {
     background-image: url('../img/front2.jpg');
+    animation-delay: 6s;
 }
 
 .hero div:nth-child(3) {
     background-image: url('../img/front3.jpg');
+    animation-delay: 12s;
 }
