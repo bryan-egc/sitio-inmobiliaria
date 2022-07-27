@@ -35,3 +35,45 @@ body {
     font-family: "Avenir", sans-serif;
     color: #67666e;
 }
+
+/*Componente Hero*/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; /*Para que los elementos dentro de el elemento padre no se desborden*/
+}
+
+@keyframes heroAnimation {
+    0% {
+        opacity: 0;
+    }
+}
+
+.hero div {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover; /*Para que ocupe todo el espacio disponible*/
+    background-position: center;
+    background-repeat: none;
+    opacity: 0; /*Las imagenes ocuparan el espacio, pero no se veran*/
+}
+
+.hero div:nth-child(1) {
+    background-image: url('../img/front1.jpg');
+}
+
+.hero div:nth-child(2) {
+    background-image: url('../img/front2.jpg');
+}
+
+.hero div:nth-child(3) {
+    background-image: url('../img/front3.jpg');
+}
