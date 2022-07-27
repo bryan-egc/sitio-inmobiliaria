@@ -120,3 +120,13 @@ img {
     width: 5%;
     height: auto;
 }
+
+@media (max-width: 720px) {
+    .hero .hero-logo { width: 60%; }
+    .hero .hero-down { width: 15%; }
+}
+
+@media (max-width: 440px) {
+    .hero .hero-logo { width: 80%; }
+    .hero .hero-down { width: 20%; }
+}
