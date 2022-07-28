@@ -179,3 +179,9 @@ header.transparente nav a.activo,
 header.transparente nav a:hover {
     color: white;
 }
+
+/*Layout*/
+
+.primera {
+    margin-top: 100vh;
+}
