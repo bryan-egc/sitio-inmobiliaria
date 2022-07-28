@@ -152,3 +152,15 @@ header img {
     height: 60px;
     width: auto;
 }
+
+header nav a {
+    color: #67666e;
+    font-weight: normal;
+    margin-left: 1em;
+    transition: 300ms ease-in-out;
+}
+
+header nav a:hover {
+    color: #a97c50;
+    font-weight: bold;
+}
