@@ -141,11 +141,11 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1em;
-
 }
 
 header img {
@@ -160,6 +160,7 @@ header nav a {
     transition: 300ms ease-in-out;
 }
 
+header nav a.activo,
 header nav a:hover {
     color: #a97c50;
     font-weight: bold;
