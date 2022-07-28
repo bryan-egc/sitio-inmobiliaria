@@ -148,6 +148,11 @@ header {
     padding: 0 1em;
 }
 
+header.transparente {
+    background-color: transparent;
+    box-shadow: none;
+}
+
 header img {
     height: 60px;
     width: auto;
